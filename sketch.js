@@ -47,7 +47,7 @@ function setup(){
 }
 
 function draw(){
-    if(backgroundImg)
+if(backgroundImg){
         background(backgroundImg);
     
         noStroke();
@@ -79,7 +79,7 @@ function draw(){
     //log6.display();
     slingshot.display();    
 }
-
+}
 function mouseDragged(){
     //if (gameState!=="launched"){
         Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
